@@ -1,0 +1,42 @@
+/* src/components/Leaderboard.css */
+.leaderboard-container {
+  /* margin: 20px; */
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.leaderboard-table th, .leaderboard-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.leaderboard-table th {
+  background-color: #f2f2f2;
+}
+
+.leaderboard-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Styles for top scorers */
+.top-1 {
+  background-color: #ffd700; /* Gold for 1st place */
+  font-weight: bold;
+}
+
+.top-2 {
+  background-color: #c0c0c0; /* Silver for 2nd place */
+  font-weight: bold;
+}
+
+.top-3 {
+  background-color: #cd7f32; /* Bronze for 3rd place */
+  font-weight: bold;
+}

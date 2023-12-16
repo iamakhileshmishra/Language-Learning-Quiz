@@ -1,0 +1,110 @@
+/* src/components/Quiz.css */
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.quiz-question-container {
+  max-width: 600px;
+  background-color: #a87ac2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: black;
+}
+
+.quiz-question-number {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.quiz-question {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.quiz-options {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quiz-options li {
+  background-color: #d3a7ff;
+  color: black;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quiz-options li:hover {
+  background-color: #b37fdf;
+}
+
+.correct {
+  background-color: #8aff8a !important;
+  color: black !important;
+}
+
+.wrong {
+  background-color: #ff8a8a !important;
+  color: black !important;
+}
+/* Add these styles for celebrating animation */
+@keyframes celebrate {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+/* Add these styles for sorrow animation */
+@keyframes sorrow {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(15deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* Additional styles for celebration and sorrow animations */
+.celebrate {
+  animation: celebrate 1s ease-in-out;
+}
+
+.sorrow {
+  animation: sorrow 1s ease-in-out;
+}
+.quiz-result-container {
+  text-align: center;
+}
+
+.quiz-result-heading {
+  font-size: 24px;
+  color: #a87ac2;
+}
+
+.quiz-result-text {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.quiz-restart-button,.view-leaderboard-button {
+  background-color: #a87ac2;
+  margin: 10px;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quiz-restart-button:hover {
+  background-color: #8a5ab8;
+}
